@@ -17,9 +17,12 @@
                     <input type="text" name="name" id="name" placeholder="Username or email" required autocomplete="on">
                 </div>
 
-                <div class="inputLine">
+                <div class="inputLine" style="margin-bottom:0">
                     <label for="password">Password</label><br> 
                     <input type="password" name="password" id="password" required autocomplete="on">
+                    <label for="showPasswordBtn" style="font-size:10px; color:grey; padding:0px; position: relative;
+                    bottom: 10px;">Show password</label>
+                    <input type="checkbox" id="showPasswordBtn" onclick="showPassword(password)">
                     </div>
 
                 <button id="logInBtn" type="submit" onclick="validateForm()">Log In</button> 
@@ -37,16 +40,21 @@
                         <input type="email" name="email" id="email" requires autocomplete="on">
                     </div>
     
-                    <div class="inputLine">
+                    <div class="inputLine" style="margin-bottom: 0">
                         <label for="password">Password</label><br> 
                         <input type="password" name="password2" id="password2" required autocomplete="on">
+                        <label for="showPasswordBtn2" style="font-size:10px; color:grey; padding:0px">Show password</label>
+                        <input type="checkbox" id="showPasswordBtn2" onclick="showPassword(password2)">
                     </div>
-                    <button id="signUpBtn" type="submit" onclick="validateForm()">Sign Up</button> 
-                
+            
+                    <button id="signUpBtn" type="submit" onclick="validateForm()">Sign Up</button> <div style="height:51px"> </div>                             
             </form>
 
             <div class="error"></div>
+
+            
             <button type="button" id="changeBtn" class="blackTheme"> </button>
+           
         </div>   
         <script src='./js.js'></script>  
     </body>

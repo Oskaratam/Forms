@@ -2,7 +2,11 @@ const container = document.querySelector('.container'),
       logInBtn = document.getElementById("logInBtn"),
       changeBtn = document.getElementById("changeBtn");
       logInForm = document.getElementById("logIn"),
-      signUpForm = document.getElementById("signUp");
+      signUpForm = document.getElementById("signUp"),
+      showPasswordBtn = document.getElementById("showPasswordBtn"),
+      showPasswordBtn2 = document.getElementById("showPasswordBtn2"),
+      password = document.getElementById("password")
+      password2 = document.getElementById("password2");
 
 changeBtn.innerText = 'Create account';
 changeBtn.addEventListener('click', () => {
@@ -20,3 +24,11 @@ changeBtn.addEventListener('click', () => {
     }
 })
 
+
+const showPassword = (passwordTyped) => {
+if (passwordTyped.type == 'password'){
+    passwordTyped.type = 'text'
+} else {
+    passwordTyped.type = 'password'
+}
+}
