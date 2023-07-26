@@ -3,25 +3,51 @@
     <head>
         <meta charset="utf-8">
         <title>Registration</title>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./style.css">      
     </head>
     <body>
         <div class="container">
+            <header>
             <h1>Welcome,<br>ready to rock?</h1>
-            <form class="logIn" method="get">
-                <div class="inputLine">
-                <label for="name">Name</label>
-                <input type="text"  name="name" id="name" placeholder="Username or email" required>
+            <img class="logo" src="./logo.png" alt="logo of the Muse Vibe">
+            </header>
+            <form id="logIn" method="get">
+                <div class="inputLine first">
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" id="name" placeholder="Username or email" required autocomplete="on">
                 </div>
 
                 <div class="inputLine">
-                <label for="password">Password</label> 
-                <input type="password" name="password" id="password" required>
-                </div>
+                    <label for="password">Password</label><br> 
+                    <input type="password" name="password" id="password" required autocomplete="on">
+                    </div>
 
-                <button type="submit">Log in</button>
-                <button>Sign Up</button>
+                <button id="logInBtn" type="submit" onclick="validateForm()">Log In</button> 
             </form>
-        </div>
+
+
+            <form id="signUp" class="hidden" method="get">
+                    <div class="inputLine">
+                        <label for="name2">Name</label><br>
+                        <input type="text" name="name2" id="name2" placeholder="Username or email" required autocomplete="on">
+                    </div>
+
+                    <div class="inputLine">
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email" requires autocomplete="on">
+                    </div>
+    
+                    <div class="inputLine">
+                        <label for="password">Password</label><br> 
+                        <input type="password" name="password2" id="password2" required autocomplete="on">
+                    </div>
+                    <button id="signUpBtn" type="submit" onclick="validateForm()">Sign Up</button> 
+                
+            </form>
+
+            <div class="error"></div>
+            <button type="button" id="changeBtn" class="blackTheme"> </button>
+        </div>   
+        <script src='./js.js'></script>  
     </body>
 </html>
