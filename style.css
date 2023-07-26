@@ -39,6 +39,10 @@ header {
     border-bottom: 2px solid white;
     color:white;
 }
+.errorInput {
+    border: none;
+    border-bottom: 2px solid red;
+}
 
 
 
@@ -159,4 +163,11 @@ h1 {
     margin-bottom: 136px;
     flex: none;
 }
+#passwordError,
+#nameError {
+    margin-top:5px;
+    color:red;
+    font-size:8px;
+}
+
 

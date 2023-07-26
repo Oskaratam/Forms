@@ -25,7 +25,7 @@
                     <input type="checkbox" id="showPasswordBtn" onclick="showPassword(password)">
                     </div>
 
-                <button id="logInBtn" type="submit" onclick="validateForm()">Log In</button> 
+                <button id="logInBtn" type="submit">Log In</button> 
             </form>
 
 
@@ -33,24 +33,25 @@
                     <div class="inputLine">
                         <label for="name2">Name</label><br>
                         <input type="text" name="name2" id="name2" placeholder="Username or email" required autocomplete="on">
+                        <div id="nameError"></div>
                     </div>
 
                     <div class="inputLine">
-                        <label for="email">Email</label><br>
-                        <input type="email" name="email" id="email" requires autocomplete="on">
+                        <label for="email2">Email</label><br>
+                        <input type="email" name="email" id="email2" requires autocomplete="on">
+                        <div id="emailError"></div>
                     </div>
     
                     <div class="inputLine" style="margin-bottom: 0">
-                        <label for="password">Password</label><br> 
+                        <label for="password2">Password</label><br> 
                         <input type="password" name="password2" id="password2" required autocomplete="on">
+                        <div id="passwordError"></div>
                         <label for="showPasswordBtn2" style="font-size:10px; color:grey; padding:0px">Show password</label>
                         <input type="checkbox" id="showPasswordBtn2" onclick="showPassword(password2)">
                     </div>
             
-                    <button id="signUpBtn" type="submit" onclick="validateForm()">Sign Up</button> <div style="height:51px"> </div>                             
+                    <button id="signUpBtn" type="submit">Sign Up</button> <div style="height:51px"> </div>                             
             </form>
-
-            <div class="error"></div>
 
             
             <button type="button" id="changeBtn" class="blackTheme"> </button>
