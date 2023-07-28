@@ -47,6 +47,7 @@ signUpForm.addEventListener('submit', (e) => {
     messageForEmail = [];
     passwordError.innerHTML = null;
     nameError.innerHTML = null;
+    emailError.innerHTML = null;
     name2.classList.remove('errorInput');
     password2.classList.remove('errorInput');
     email2.classList.remove('errorInput');
@@ -75,7 +76,7 @@ signUpForm.addEventListener('submit', (e) => {
     } 
     //EMAIL VALIDATION
     if(email2.value == '' || email2.value == null){
-        messageForEmail.push('Enter your email')
+        messageForEmail.push('Enter your email');
     }else if(!/^([\w-\.]+)@([a-z]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/.test(email2.value)){
         messageForEmail.push('Invalid email')
     }
