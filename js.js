@@ -76,14 +76,10 @@ signUpForm.addEventListener('submit', (e) => {
     //EMAIL VALIDATION
     if(email2.value == '' || email2.value == null){
         messageForEmail.push('Enter your email')
-    }
-    if(!/^([\w-\.]+)@([a-z]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/.test(message2.value)){
+    }else if(!/^([\w-\.]+)@([a-z]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/.test(email2.value)){
         messageForEmail.push('Invalid email')
     }
-
-
-
-
+   
 
     if (messageForName.length > 0) {
         e.preventDefault();
