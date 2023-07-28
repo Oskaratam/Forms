@@ -164,7 +164,8 @@ h1 {
     flex: none;
 }
 #passwordError,
-#nameError {
+#nameError,
+#emailError {
     margin-top:5px;
     color:red;
     font-size:8px;
